@@ -8,7 +8,6 @@ namespace NightCycle
 {
     public class NightCycleHooks
     {
-        internal static NightCycleEnums.CycleTime cycleTime;
 
         private static bool _modsInit;
         public static void RainWorldOnOnModsInit(On.RainWorld.orig_OnModsInit initOrig, RainWorld initSelf)
@@ -20,7 +19,7 @@ namespace NightCycle
             {
                 _modsInit = true;
                 On.World.ctor += World_ctor;
-                On.RoomSettings.ctor += RoomSettings_ctor;
+                On.Room.ctor += Room_ctor;
             }
             catch (Exception ex)
             {
@@ -28,34 +27,35 @@ namespace NightCycle
             }
         }
 
-        private static void RoomSettings_ctor(On.RoomSettings.orig_ctor orig, RoomSettings self, string name, Region region, bool template, bool firstTemplate, SlugcatStats.Name playerChar)
+        private static void Room_ctor(On.Room.orig_ctor orig, Room self, RainWorldGame game, World world, AbstractRoom abstractRoom)
         {
-            orig(self, name, region, template, firstTemplate, playerChar);
-            if (self != null && self.name.StartsWith("SU_"))
+            orig(self, game, world, abstractRoom);
+            if (world?.region != null && abstractRoom.name.StartsWith("SU_"))
             {
+                var screenCount = self.cameraPositions.Length;
                 RoomSettings.FadePalette newFade;
-                switch (cycleTime)
+                switch (Plugin.cycleTime)
                 {
                     case NightCycleEnums.CycleTime.Day:
-                        RKMFP.SetExtraFadePalette(self, 1, null);
+                        RKMFP.SetExtraFadePalette(self.roomSettings, 1, null);
                         break;
 
                     case NightCycleEnums.CycleTime.Dusk:
-                        newFade = new(88880, self.fadePalette.fades.Length);
-                        for (int i = 0; i < self.fadePalette.fades.Length; i++)
+                        newFade = new(88880, screenCount);
+                        for (int i = 0; i < screenCount; i++)
                         {
                             newFade.fades[i] = 0.75f;
                         }
-                        RKMFP.SetExtraFadePalette(self, 1, newFade);
+                        RKMFP.SetExtraFadePalette(self.roomSettings, 1, newFade);
                         break;
 
                     case NightCycleEnums.CycleTime.Night:
-                        newFade = new(10, self.fadePalette.fades.Length);
-                        for (int i = 0; i < self.fadePalette.fades.Length; i++)
+                        newFade = new(10, screenCount);
+                        for (int i = 0; i < screenCount; i++)
                         {
                             newFade.fades[i] = 0.75f;
                         }
-                        RKMFP.SetExtraFadePalette(self, 1, newFade);
+                        RKMFP.SetExtraFadePalette(self.roomSettings, 1, newFade);
                         break;
                 }
             }
@@ -68,15 +68,15 @@ namespace NightCycle
             {
                 if ((game.GetStorySession.saveState.cycleNumber % 3) == 0)
                 {
-                    cycleTime = NightCycleEnums.CycleTime.Day;
+                    Plugin.cycleTime = NightCycleEnums.CycleTime.Day;
                 }
                 if ((game.GetStorySession.saveState.cycleNumber % 3) == 1)
                 {
-                    cycleTime = NightCycleEnums.CycleTime.Dusk;
+                    Plugin.cycleTime = NightCycleEnums.CycleTime.Dusk;
                 }
                 if ((game.GetStorySession.saveState.cycleNumber % 3) == 2)
                 {
-                    cycleTime = NightCycleEnums.CycleTime.Night;
+                    Plugin.cycleTime = NightCycleEnums.CycleTime.Night;
                 }
             }
         }
