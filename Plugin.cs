@@ -14,8 +14,6 @@ namespace NightCycle
 
         internal static ManualLogSource s_logger;
 
-        internal static NightCycleEnums.CycleTime cycleTime;
-
         public void OnEnable()
         {
             Plugin.s_logger = base.Logger;

@@ -8,6 +8,8 @@ namespace NightCycle
 {
     public class NightCycleHooks
     {
+        internal static NightCycleEnums.CycleTime cycleTime;
+
         private static bool _modsInit;
         public static void RainWorldOnOnModsInit(On.RainWorld.orig_OnModsInit initOrig, RainWorld initSelf)
         {
@@ -29,19 +31,20 @@ namespace NightCycle
         private static void RoomSettings_ctor(On.RoomSettings.orig_ctor orig, RoomSettings self, string name, Region region, bool template, bool firstTemplate, SlugcatStats.Name playerChar)
         {
             orig(self, name, region, template, firstTemplate, playerChar);
-            RoomSettings.FadePalette newFade;
             if (self != null && self.name.StartsWith("SU_"))
             {
-                switch (Plugin.cycleTime)
+                RoomSettings.FadePalette newFade;
+                switch (cycleTime)
                 {
                     case NightCycleEnums.CycleTime.Day:
+                        RKMFP.SetExtraFadePalette(self, 1, null);
                         break;
 
                     case NightCycleEnums.CycleTime.Dusk:
-                        newFade = new(2, self.fadePalette.fades.Length);
+                        newFade = new(88880, self.fadePalette.fades.Length);
                         for (int i = 0; i < self.fadePalette.fades.Length; i++)
                         {
-                            newFade.fades[i] = 0.6f;
+                            newFade.fades[i] = 0.75f;
                         }
                         RKMFP.SetExtraFadePalette(self, 1, newFade);
                         break;
@@ -50,7 +53,7 @@ namespace NightCycle
                         newFade = new(10, self.fadePalette.fades.Length);
                         for (int i = 0; i < self.fadePalette.fades.Length; i++)
                         {
-                            newFade.fades[i] = 0.6f;
+                            newFade.fades[i] = 0.75f;
                         }
                         RKMFP.SetExtraFadePalette(self, 1, newFade);
                         break;
@@ -65,15 +68,15 @@ namespace NightCycle
             {
                 if ((game.GetStorySession.saveState.cycleNumber % 3) == 0)
                 {
-                    Plugin.cycleTime = NightCycleEnums.CycleTime.Day;
+                    cycleTime = NightCycleEnums.CycleTime.Day;
                 }
                 if ((game.GetStorySession.saveState.cycleNumber % 3) == 1)
                 {
-                    Plugin.cycleTime = NightCycleEnums.CycleTime.Dusk;
+                    cycleTime = NightCycleEnums.CycleTime.Dusk;
                 }
                 if ((game.GetStorySession.saveState.cycleNumber % 3) == 2)
                 {
-                    Plugin.cycleTime = NightCycleEnums.CycleTime.Night;
+                    cycleTime = NightCycleEnums.CycleTime.Night;
                 }
             }
         }
