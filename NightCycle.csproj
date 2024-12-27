@@ -76,11 +76,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NightCycleEnums.cs" />
+    <Compile Include="UI\RemixInterfaze.cs" />
+    <Compile Include="utils\NightCycleEnums.cs" />
     <Compile Include="NightCycleHooks.cs" />
-    <Compile Include="NightCycleRegionsPalette.cs" />
+    <Compile Include="RegionsArt\RegionsPalette.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\helper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

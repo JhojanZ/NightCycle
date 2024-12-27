@@ -8,9 +8,9 @@ namespace NightCycle
     [BepInPlugin(MOD_ID, MOD_NAME, MOD_VER)]
     public class Plugin : BaseUnityPlugin
     {
-        private const string MOD_ID = "qtpi.nightcycle";
+        private const string MOD_ID = "qtpi.felipe.nightcycle";
         private const string MOD_NAME = "NightCycle";
-        private const string MOD_VER = "0.1.0";
+        private const string MOD_VER = "0.1.1";
 
         internal static ManualLogSource s_logger;
 
