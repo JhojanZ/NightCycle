@@ -15,20 +15,20 @@ NightCycle es un mod para el juego Rain World que introduce un ciclo de día y n
 ## Instalación
 
 1. **Requisitos Previos**:
-   - Asegúrate de tener BepInEx instalado. Puedes descargarlo desde [BepInEx Releases](https://github.com/BepInEx/BepInEx/releases).
+   -
 
 2. **Descargar el Mod**:
-   - Descarga la última versión del mod desde la sección de [Releases](https://github.com/tu-usuario/nightcycle/releases) de este repositorio.
+   - Descarga repositorio, agrega las referencias necesarias y compila, se te generara un .dll en bin/Debug/NigthCicle.dll.
 
 3. **Instalar el Mod**:
-   - Extrae el contenido del archivo descargado en la carpeta `BepInEx/plugins` dentro del directorio de instalación de Rain World.
+   - Extrae el .dll compilado y agregalo en un mod propio en la carpeta de plugins
 
 4. **Ejecutar el Juego**:
-   - Inicia Rain World y el mod se cargará automáticamente.
+   - Inicia Rain World y activa el mod en Remix.
 
 ## Uso
 
-El mod se activa automáticamente al iniciar el juego. No se requiere configuración adicional. El ciclo de día y noche comenzará a afectar el mundo del juego inmediatamente.
+El mod se activa en Remix. El ciclo de día y noche comenzará a afectar el mundo del juego inmediatamente.
 
 ## Desarrollo
 
