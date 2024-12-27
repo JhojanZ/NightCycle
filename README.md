@@ -38,16 +38,6 @@ El mod se activa en Remix. El ciclo de día y noche comenzará a afectar el mund
 - `NightCycleHooks.cs`: Contiene los hooks que modifican el comportamiento del juego.
 - `Utils/Helper.cs`: Contiene funciones auxiliares utilizadas por el mod.
 
-### Contribuir
-
-Si deseas contribuir al desarrollo de este mod, sigue estos pasos:
-
-1. Haz un fork de este repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva característica'`).
-4. Sube tus cambios a tu fork (`git push origin feature/nueva-caracteristica`).
-5. Abre un Pull Request en este repositorio.
-
 ### Compilar desde el Código Fuente
 
 1. Clona este repositorio: `git clone https://github.com/tu-usuario/nightcycle.git`
