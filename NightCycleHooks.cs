@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using NightCycle.Utils;
 
 namespace NightCycle
@@ -7,10 +8,23 @@ namespace NightCycle
     {
         private static bool _modsInit;
 
+        public static RemixInterfaze RemixOptions;
+
+        private static NightCycleMain _nightCycleMain;
+
+
+        public static void Initialize(NightCycleMain nightCycleMain)
+        {
+            _nightCycleMain = nightCycleMain;
+        }
+
         public static void RainWorldOnOnModsInit(On.RainWorld.orig_OnModsInit initOrig, RainWorld initSelf)
         {
             initOrig(initSelf);
             if (_modsInit) return;
+
+            RemixOptions = new RemixInterfaze(_nightCycleMain);
+            MachineConnector.SetRegisteredOI("qtpi.felipe.nightcycle", RemixOptions);
 
             try
             {
@@ -21,7 +35,7 @@ namespace NightCycle
             }
             catch (Exception ex)
             {
-                Plugin.s_logger.LogError(ex);
+                NightCycleMain.s_logger.LogError(ex);
             }
         }
 
@@ -42,6 +56,7 @@ namespace NightCycle
             if (RegionsPalette.TryGetValue(place, out var action))
             {
                 action(self);
+                Debug.WriteLine("the place is: ", place); // Changed from Debug.Log to Debug.WriteLine
             }
             else
             {

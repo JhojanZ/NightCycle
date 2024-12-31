@@ -6,7 +6,7 @@ using MonoMod.RuntimeDetour;
 namespace NightCycle
 {
     [BepInPlugin(MOD_ID, MOD_NAME, MOD_VER)]
-    public class Plugin : BaseUnityPlugin
+    public class NightCycleMain : BaseUnityPlugin
     {
         private const string MOD_ID = "qtpi.felipe.nightcycle";
         private const string MOD_NAME = "NightCycle";
@@ -18,7 +18,9 @@ namespace NightCycle
 
         public void OnEnable()
         {
-            Plugin.s_logger = base.Logger;
+            NightCycleMain.s_logger = base.Logger;
+            NightCycleHooks.Initialize(this);
+        
 
             try
             {

@@ -18,13 +18,13 @@ namespace NightCycle.Utils
                 switch (game.GetStorySession.saveState.cycleNumber % 3)
                 {
                     case 0:
-                        Plugin.cycleTime = NightCycleEnums.CycleTime.Day;
+                        NightCycleMain.cycleTime = NightCycleEnums.CycleTime.Day;
                         break;
                     case 1:
-                        Plugin.cycleTime = NightCycleEnums.CycleTime.Dusk;
+                        NightCycleMain.cycleTime = NightCycleEnums.CycleTime.Dusk;
                         break;
                     case 2:
-                        Plugin.cycleTime = NightCycleEnums.CycleTime.Night;
+                        NightCycleMain.cycleTime = NightCycleEnums.CycleTime.Night;
                         break;
                 }
             }

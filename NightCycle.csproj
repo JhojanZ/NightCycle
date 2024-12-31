@@ -80,9 +80,14 @@
     <Compile Include="utils\NightCycleEnums.cs" />
     <Compile Include="NightCycleHooks.cs" />
     <Compile Include="RegionsArt\RegionsPalette.cs" />
-    <Compile Include="Plugin.cs" />
+    <Compile Include="NightCycleMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="utils\helper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y "$(TargetDir)NightCycle.dll" "$(ProjectDir)plugins\"
+
+echo "done"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -1,0 +1,11 @@
+{
+    	"id": "qtpi.felipe.nightcycle",
+    	"name": "NightCycle_dev_main",
+    	"version": "1.0.4",
+   	"target_game_version": "v1.9",
+    	"authors": "IAHunter, qtpi, felipe",
+	"description": "Adds an alternative day/night cycle to the world, moving the time forward each cycle.<LINE>Note that, in order to prevent conflicting time cycles, this mod disables the vanilla day/night cycle.",
+	"requirements": ["regionkit"],
+	"requirements_names": ["RegionKit"],
+    	"checksum_override_version": false
+}

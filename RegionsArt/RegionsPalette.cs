@@ -18,7 +18,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -50,7 +50,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -81,7 +81,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -113,7 +113,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -146,7 +146,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -178,7 +178,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -211,7 +211,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -246,7 +246,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -279,7 +279,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -314,7 +314,7 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.subregionName == "The Leg" || self.abstractRoom.subregionName == "Underhang")
                     {
-                        switch (Plugin.cycleTime)
+                        switch (NightCycleMain.cycleTime)
                         {
                             case NightCycleEnums.CycleTime.Day:
                                 break;
@@ -342,7 +342,7 @@ namespace NightCycle
                     }
                     if (self.abstractRoom.subregionName == "The Wall")
                     {
-                        switch (Plugin.cycleTime)
+                        switch (NightCycleMain.cycleTime)
                         {
                             case NightCycleEnums.CycleTime.Day:
                                 break;
@@ -370,7 +370,7 @@ namespace NightCycle
                     }
                     else
                     {
-                        switch (Plugin.cycleTime)
+                        switch (NightCycleMain.cycleTime)
                         {
                             case NightCycleEnums.CycleTime.Day:
                                 break;
@@ -402,7 +402,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -448,7 +448,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -481,7 +481,7 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.name.StartsWith("SS_D08") || self.abstractRoom.name.StartsWith("SS_E08") || self.abstractRoom.name.StartsWith("SS_S04"))
                     {
-                        switch (Plugin.cycleTime)
+                        switch (NightCycleMain.cycleTime)
                         {
                             case NightCycleEnums.CycleTime.Day:
                                 break;
@@ -515,7 +515,7 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.name.StartsWith("RM_D08") || self.abstractRoom.name.StartsWith("RM_E08") || self.abstractRoom.name.StartsWith("RM_S04"))
                     {
-                        switch (Plugin.cycleTime)
+                        switch (NightCycleMain.cycleTime)
                         {
                             case NightCycleEnums.CycleTime.Day:
                                 break;
@@ -549,7 +549,7 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.name.StartsWith("DM_ROOF") || self.abstractRoom.name.StartsWith("DM_WALL") || self.abstractRoom.name.StartsWith("DM_TEMPLE") || self.abstractRoom.name.StartsWith("DM_VISTA") || self.abstractRoom.name.StartsWith("DM_STOP"))
                     {
-                        switch (Plugin.cycleTime)
+                        switch (NightCycleMain.cycleTime)
                         {
                             case NightCycleEnums.CycleTime.Day:
                                 break;
@@ -581,7 +581,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -615,7 +615,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -648,7 +648,7 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.subregionName == "Sunken Pier")
                     {
-                        switch (Plugin.cycleTime)
+                        switch (NightCycleMain.cycleTime)
                         {
                             case NightCycleEnums.CycleTime.Day:
                                 break;
@@ -676,7 +676,7 @@ namespace NightCycle
                     }
                     else
                     {
-                        switch (Plugin.cycleTime)
+                        switch (NightCycleMain.cycleTime)
                         {
                             case NightCycleEnums.CycleTime.Day:
                                 break;
@@ -711,7 +711,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -743,7 +743,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -775,7 +775,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -807,7 +807,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
@@ -838,7 +838,7 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (Plugin.cycleTime)
+                    switch (NightCycleMain.cycleTime)
                     {
                         case NightCycleEnums.CycleTime.Day:
                             break;
