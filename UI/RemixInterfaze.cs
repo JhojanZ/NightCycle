@@ -19,7 +19,7 @@ namespace NightCycle
 
         public RemixInterfaze(NightCycleMain plugins)
         {
-            RandomCycle = config.Bind("PushToMeow_AlternateRivuletSound", false);
+            RandomCycle = config.Bind("Random_Cycles", false);
         }
 
         public override void Initialize()
