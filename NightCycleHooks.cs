@@ -25,6 +25,7 @@ namespace NightCycle
 
             RemixOptions = new RemixInterfaze(_nightCycleMain);
             MachineConnector.SetRegisteredOI("qtpi.felipe.nightcycle", RemixOptions);
+            Helper.RemixOptions = RemixOptions;
 
             try
             {
