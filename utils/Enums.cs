@@ -1,6 +1,6 @@
 ﻿namespace NightCycle
 {
-    internal class NightCycleEnums
+    internal class Enums
     {
         internal enum CycleTime
         {

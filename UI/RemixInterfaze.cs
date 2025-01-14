@@ -9,7 +9,6 @@ using UnityEngine;
 
 namespace NightCycle
 {
-
     public class RemixInterfaze : OptionInterface
     {
         // TO DO: this code...
@@ -17,13 +16,14 @@ namespace NightCycle
 
         public readonly Configurable<bool> RandomCycle;
 
-        public RemixInterfaze(NightCycleMain plugins)
+        public RemixInterfaze(Main plugins)
         {
             RandomCycle = config.Bind("Random_Cycles", false);
         }
 
         public override void Initialize()
         {
+            // A pesar de que se declara el tab, no se muestra
             OpTab mainTab = new OpTab(this, "Main");
             Tabs = new OpTab[] { mainTab };
 
@@ -32,7 +32,8 @@ namespace NightCycle
 
             UIelement[] opts = new UIelement[]
             {
-                new OpCheckBox(RandomCycle, 10, 570 - 30),
+                new OpCheckBox(RandomCycle, 10, 540){description = "Add random day cicles" },
+                new OpLabel(50, 540, "Random Cycles")
             };
 
             mainTab.AddItems(opts);

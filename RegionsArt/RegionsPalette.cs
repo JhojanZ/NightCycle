@@ -18,12 +18,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(26, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -34,7 +34,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.6f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -50,12 +50,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88800, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -65,7 +65,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Bloom, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(88801, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -81,12 +81,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88802, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -96,7 +96,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(88803, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -113,12 +113,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88804, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -128,7 +128,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -146,12 +146,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88805, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -162,7 +162,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -178,12 +178,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88806, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -194,7 +194,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -211,12 +211,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88807, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -228,7 +228,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.WaterGlowworm, 0.1f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(88808, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -246,12 +246,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88809, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -262,7 +262,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.WaterGlowworm, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(88803, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -279,12 +279,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88810, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -295,7 +295,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.FireFlies, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -314,12 +314,12 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.subregionName == "The Leg" || self.abstractRoom.subregionName == "Underhang")
                     {
-                        switch (NightCycleMain.cycleTime)
+                        switch (Main.cycleTime)
                         {
-                            case NightCycleEnums.CycleTime.Day:
+                            case Enums.CycleTime.Day:
                                 break;
 
-                            case NightCycleEnums.CycleTime.Dusk:
+                            case Enums.CycleTime.Dusk:
                                 newFade = new(88811, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -329,7 +329,7 @@ namespace NightCycle
                                 self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.2f, false));
                                 break;
 
-                            case NightCycleEnums.CycleTime.Night:
+                            case Enums.CycleTime.Night:
                                 newFade = new(10, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -342,12 +342,12 @@ namespace NightCycle
                     }
                     if (self.abstractRoom.subregionName == "The Wall")
                     {
-                        switch (NightCycleMain.cycleTime)
+                        switch (Main.cycleTime)
                         {
-                            case NightCycleEnums.CycleTime.Day:
+                            case Enums.CycleTime.Day:
                                 break;
 
-                            case NightCycleEnums.CycleTime.Dusk:
+                            case Enums.CycleTime.Dusk:
                                 newFade = new(88812, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -357,7 +357,7 @@ namespace NightCycle
                                 self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.2f, false));
                                 break;
 
-                            case NightCycleEnums.CycleTime.Night:
+                            case Enums.CycleTime.Night:
                                 newFade = new(10, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -370,12 +370,12 @@ namespace NightCycle
                     }
                     else
                     {
-                        switch (NightCycleMain.cycleTime)
+                        switch (Main.cycleTime)
                         {
-                            case NightCycleEnums.CycleTime.Day:
+                            case Enums.CycleTime.Day:
                                 break;
 
-                            case NightCycleEnums.CycleTime.Dusk:
+                            case Enums.CycleTime.Dusk:
                                 newFade = new(88813, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -385,7 +385,7 @@ namespace NightCycle
                                 self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.4f, false));
                                 break;
 
-                            case NightCycleEnums.CycleTime.Night:
+                            case Enums.CycleTime.Night:
                                 newFade = new(10, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -402,12 +402,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88814, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -417,7 +417,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.FireFlies, 0.05f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             if (self.abstractRoom.name.StartsWith("SB_F03") || self.abstractRoom.name.StartsWith("SB_TOPSIDE"))
                             {
                                 newFade = new(10, screenCount);
@@ -448,12 +448,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(26, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -463,7 +463,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.6f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -481,12 +481,12 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.name.StartsWith("SS_D08") || self.abstractRoom.name.StartsWith("SS_E08") || self.abstractRoom.name.StartsWith("SS_S04"))
                     {
-                        switch (NightCycleMain.cycleTime)
+                        switch (Main.cycleTime)
                         {
-                            case NightCycleEnums.CycleTime.Day:
+                            case Enums.CycleTime.Day:
                                 break;
 
-                            case NightCycleEnums.CycleTime.Dusk:
+                            case Enums.CycleTime.Dusk:
                                 newFade = new(26, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -496,7 +496,7 @@ namespace NightCycle
                                 self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.6f, false));
                                 break;
 
-                            case NightCycleEnums.CycleTime.Night:
+                            case Enums.CycleTime.Night:
                                 newFade = new(10, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -515,12 +515,12 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.name.StartsWith("RM_D08") || self.abstractRoom.name.StartsWith("RM_E08") || self.abstractRoom.name.StartsWith("RM_S04"))
                     {
-                        switch (NightCycleMain.cycleTime)
+                        switch (Main.cycleTime)
                         {
-                            case NightCycleEnums.CycleTime.Day:
+                            case Enums.CycleTime.Day:
                                 break;
 
-                            case NightCycleEnums.CycleTime.Dusk:
+                            case Enums.CycleTime.Dusk:
                                 newFade = new(26, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -530,7 +530,7 @@ namespace NightCycle
                                 self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.6f, false));
                                 break;
 
-                            case NightCycleEnums.CycleTime.Night:
+                            case Enums.CycleTime.Night:
                                 newFade = new(10, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -549,12 +549,12 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.name.StartsWith("DM_ROOF") || self.abstractRoom.name.StartsWith("DM_WALL") || self.abstractRoom.name.StartsWith("DM_TEMPLE") || self.abstractRoom.name.StartsWith("DM_VISTA") || self.abstractRoom.name.StartsWith("DM_STOP"))
                     {
-                        switch (NightCycleMain.cycleTime)
+                        switch (Main.cycleTime)
                         {
-                            case NightCycleEnums.CycleTime.Day:
+                            case Enums.CycleTime.Day:
                                 break;
 
-                            case NightCycleEnums.CycleTime.Dusk:
+                            case Enums.CycleTime.Dusk:
                                 newFade = new(26, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -564,7 +564,7 @@ namespace NightCycle
                                 self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.6f, false));
                                 break;
 
-                            case NightCycleEnums.CycleTime.Night:
+                            case Enums.CycleTime.Night:
                                 newFade = new(10, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -581,12 +581,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88809, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -597,7 +597,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.WaterGlowworm, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(88803, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -615,12 +615,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(26, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -630,7 +630,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.4f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -648,12 +648,12 @@ namespace NightCycle
                     RoomSettings.FadePalette newFade;
                     if (self.abstractRoom.subregionName == "Sunken Pier")
                     {
-                        switch (NightCycleMain.cycleTime)
+                        switch (Main.cycleTime)
                         {
-                            case NightCycleEnums.CycleTime.Day:
+                            case Enums.CycleTime.Day:
                                 break;
 
-                            case NightCycleEnums.CycleTime.Dusk:
+                            case Enums.CycleTime.Dusk:
                                 newFade = new(88816, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -663,7 +663,7 @@ namespace NightCycle
                                 self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.6f, false));
                                 break;
 
-                            case NightCycleEnums.CycleTime.Night:
+                            case Enums.CycleTime.Night:
                                 newFade = new(10, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -676,12 +676,12 @@ namespace NightCycle
                     }
                     else
                     {
-                        switch (NightCycleMain.cycleTime)
+                        switch (Main.cycleTime)
                         {
-                            case NightCycleEnums.CycleTime.Day:
+                            case Enums.CycleTime.Day:
                                 break;
 
-                            case NightCycleEnums.CycleTime.Dusk:
+                            case Enums.CycleTime.Dusk:
                                 newFade = new(88816, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -692,7 +692,7 @@ namespace NightCycle
                                 self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.FireFlies, 0.2f, false));
                                 break;
 
-                            case NightCycleEnums.CycleTime.Night:
+                            case Enums.CycleTime.Night:
                                 newFade = new(10, screenCount);
                                 for (int i = 0; i < screenCount; i++)
                                 {
@@ -711,12 +711,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88815, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -726,7 +726,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(88803, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -743,12 +743,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(26, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -758,7 +758,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.4f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(35, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -775,12 +775,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(88804, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -790,7 +790,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.2f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -807,12 +807,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(26, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -822,7 +822,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.4f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -838,12 +838,12 @@ namespace NightCycle
                 {
                     var screenCount = self.cameraPositions.Length;
                     RoomSettings.FadePalette newFade;
-                    switch (NightCycleMain.cycleTime)
+                    switch (Main.cycleTime)
                     {
-                        case NightCycleEnums.CycleTime.Day:
+                        case Enums.CycleTime.Day:
                             break;
 
-                        case NightCycleEnums.CycleTime.Dusk:
+                        case Enums.CycleTime.Dusk:
                             newFade = new(26, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {
@@ -854,7 +854,7 @@ namespace NightCycle
                             self.roomSettings.effects.Add(new RoomSettings.RoomEffect(RoomSettings.RoomEffect.Type.Darkness, 0.6f, false));
                             break;
 
-                        case NightCycleEnums.CycleTime.Night:
+                        case Enums.CycleTime.Night:
                             newFade = new(10, screenCount);
                             for (int i = 0; i < screenCount; i++)
                             {

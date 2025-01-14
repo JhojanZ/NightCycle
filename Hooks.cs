@@ -4,16 +4,16 @@ using NightCycle.Utils;
 
 namespace NightCycle
 {
-    public class NightCycleHooks
+    public class Hooks
     {
         private static bool _modsInit;
 
         public static RemixInterfaze RemixOptions;
 
-        private static NightCycleMain _nightCycleMain;
+        private static Main _nightCycleMain;
 
 
-        public static void Initialize(NightCycleMain nightCycleMain)
+        public static void Initialize(Main nightCycleMain)
         {
             _nightCycleMain = nightCycleMain;
         }
@@ -36,7 +36,7 @@ namespace NightCycle
             }
             catch (Exception ex)
             {
-                NightCycleMain.s_logger.LogError(ex);
+                Main.s_logger.LogError(ex);
             }
         }
 

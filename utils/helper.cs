@@ -1,5 +1,6 @@
 using System;
-using static NightCycle.NightCycleEnums;
+using BepInEx;
+using static NightCycle.Enums;
 
 namespace NightCycle.Utils
 {
@@ -7,14 +8,16 @@ namespace NightCycle.Utils
     {
 
         public static RemixInterfaze RemixOptions;
+        public static int dayRandom;
+        public static int secion;
         private static readonly Random random = new Random();
 
 
-        private static readonly NightCycleEnums.CycleTime[] CycleTimes =
+        private static readonly Enums.CycleTime[] CycleTimes =
         {
-            NightCycleEnums.CycleTime.Day,
-            NightCycleEnums.CycleTime.Dusk,
-            NightCycleEnums.CycleTime.Night
+            Enums.CycleTime.Day,
+            Enums.CycleTime.Dusk,
+            Enums.CycleTime.Night
         };
 
         public static string GetPlace(string region)
@@ -23,6 +26,16 @@ namespace NightCycle.Utils
             return index >= 0 ? region.Substring(0, index) : "";
         }
 
+        public static void ChangeRand(RainWorldGame game)
+        {
+            if (game.GetStorySession.saveState.cycleNumber != secion)
+            {
+                secion = game.GetStorySession.saveState.cycleNumber;
+                dayRandom = random.Next(0, CycleTimes.Length); // Genera un número aleatorio entre 0 y 2
+            }
+        }
+
+        //Sospecho de que
         public static void WorldCtor(On.World.orig_ctor orig, World self, RainWorldGame game, Region region, string name, bool singleRoomWorld)
         {
             orig(self, game, region, name, singleRoomWorld);
@@ -30,20 +43,18 @@ namespace NightCycle.Utils
             {
                 if (RemixOptions.RandomCycle.Value)
                 {
-                    int randomIndex = random.Next(0, CycleTimes.Length); // Genera un número aleatorio entre 0 y 2
-                    NightCycleMain.cycleTime = CycleTimes[randomIndex];
-                    string debug = $"**** {randomIndex} - {NightCycleMain.cycleTime}";
-                    UnityEngine.Debug.Log(debug);
+                    Main.cycleTime = CycleTimes[dayRandom];
+                    ChangeRand(game);
+                    UnityEngine.Debug.Log($"**** {dayRandom} - {Main.cycleTime} || {game.GetStorySession.saveState.cycleNumber} -> {secion}");
                 }
                 else
                 {
-                    NightCycleMain.cycleTime = CycleTimes[game.GetStorySession.saveState.cycleNumber % CycleTimes.Length];
-                    string debug = $"||| - {NightCycleMain.cycleTime}";
-                    UnityEngine.Debug.Log(debug);
+                    Main.cycleTime = CycleTimes[game.GetStorySession.saveState.cycleNumber % CycleTimes.Length];
+                    UnityEngine.Debug.Log($"||| - {Main.cycleTime}");
                 }
             }
             
-                
+            
         }
     }
 }
